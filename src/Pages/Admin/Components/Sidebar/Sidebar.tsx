@@ -9,12 +9,14 @@ export default function Sidebar() {
         <div className='list-group list-group-flush mx-3 mt-4'>
           <ul className='nav nav-pills flex-column mb-auto'>
             <li>
-              <a href='order-list.html' className='nav-link text-dark' aria-current='page'>
+              <Link
+                to={routes.admin.order.list.path}  className='nav-link text-dark'>
                 Orders
-              </a>
+              </Link>
             </li>
-            <li className=''>
-              <Link to={routes.admin.product.list.path} className='nav-link text-dark'>
+            <li>
+              <Link
+                to={routes.admin.product.list.path}  className='nav-link text-dark'>
                 Products
               </Link>
             </li>
@@ -25,7 +27,7 @@ export default function Sidebar() {
               </a>
             </li>
             <li className='nav-item'>
-              <Link  className='nav-link active' to={routes.admin.category.list.path}>
+              <Link className='nav-link text-dark' to={routes.admin.category.list.path}>
                 Category
               </Link>
             </li>

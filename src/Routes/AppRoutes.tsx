@@ -8,6 +8,8 @@ const CategoryAction = React.lazy(() => import('../Pages/Admin/Category/Create/A
 const CategoryList = React.lazy(() => import('../Pages/Admin/Category/List/CategoryList'));
 const ProductAction = React.lazy(() => import('../Pages/Admin/Product/Action/ProductAction'));
 const AdminProductList = React.lazy(() => import('../Pages/Admin/Product/List/ProductList'));
+const AdminOrderList = React.lazy(() => import('../Pages/Admin/Order/List/OrderList'));
+const AdminOrderDetails = React.lazy(() => import('../Pages/Admin/Order/Details/OrderDetails'));
 
 
 const NotFound = React.lazy(() => import('../Pages/404/404'));
@@ -24,6 +26,8 @@ export default function AppRoutes() {
           <Route path={routes.admin.product.create.path} element={<ProductAction />} />
           <Route path={routes.admin.product.edit.path} element={<ProductAction />} />
           <Route path={routes.admin.product.list.path} element={<AdminProductList />} />
+          <Route path={routes.admin.order.list.path} element={<AdminOrderList />} />
+          <Route path={routes.admin.order.details.path} element={<AdminOrderDetails />} />
           <Route path="*" element={<NotFound />} />
         </Route>
         

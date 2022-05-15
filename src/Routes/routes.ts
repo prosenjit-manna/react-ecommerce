@@ -33,6 +33,17 @@ export const routes = {
           return `/admin/product/edit/${id}`;
         }
       },
+    },
+    order: {
+      list: {
+        path: 'order/list',
+      },
+      details: {
+        path: 'order/:id',
+        build: (id: string) => {
+          return `/admin/order/${id}`;
+        }
+      },
     }
   }
 };
