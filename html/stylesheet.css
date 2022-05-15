@@ -1,0 +1,63 @@
+.font-smaller {
+  font-size: 14px;
+}
+
+.font-small {
+  font-size: 16px;
+}
+
+.font-medium {
+  font-size: 18px;
+}
+
+.font-large {
+  font-size: 20px;
+}
+
+.font-xl {
+  font-size: 26px;
+}
+
+.product-right .color-variant li {
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+}
+.bg-light0 {
+  background-color: #d0edff;
+}
+.bg-light1 {
+  background-color: #f1e7e6;
+}
+.bg-light2 {
+  background-color: #bfbfbf;
+}
+
+.product-right .size-box ul li {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+}
+.product-right .size-box ul li.active {
+  background-color: #f7f7f7;
+}
+
+.qty-box {
+  width: 150px;
+}
+.qty-box input:focus {
+  box-shadow: none;
+}
+.qty-box span button {
+  border-radius: 0px;
+  outline: none;
+}
+.qty-box span button:focus {
+  box-shadow: none;
+}
+.wishlist-btn:hover path {
+  fill: #ff4c3b;
+}
+.remove-btn {
+  font-size: 12px;
+}

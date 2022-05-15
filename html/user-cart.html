@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+
+    <title>Cart</title>
+  </head>
+  <body>
+    <!--Main Navigation-->
+
+    <header>
+      <!-- Navbar -->
+      <div class="container">
+        <nav id="main-navbar" class="navbar navbar-expand-lg">
+          <!-- Container wrapper -->
+          <div class="container">
+            <h2>Admin</h2>
+
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-product-list.html"
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-product-details.html"
+                  >Product Details</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-signup.html"
+                  >SignUp</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-account-order.html"
+                  >Order</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="user-account-order-details.html"
+                  >Order Details</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+      </div>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <div class="wrapper pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Quantity</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Total</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="align-middle" width="30%">
+                    <div class="media d-flex flex-nowrap">
+                      <a class="thumbnail pull-left" href="#">
+                        <img
+                          class="media-object"
+                          src="https://www.shore.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/C/T/CTESC4RUa.jpg"
+                          width="84"
+                          height="84"
+                        />
+                      </a>
+                      <div class="media-body px-4">
+                        <h4 class="media-heading font-medium mb-0">
+                          <a href="#" class="text-black text-decoration-none"
+                            >T-shirt</a
+                          >
+                        </h4>
+                        <h5 class="media-heading font-smaller">
+                          by <a href="#">Brand name</a>
+                        </h5>
+                        <span class="font-smaller">Red / M </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="align-middle">
+                    <div class="qty-box">
+                      <div class="input-group">
+                        <span class="input-group-prepend"
+                          ><button
+                            type="button"
+                            class="btn quantity-left-minus border"
+                            data-type="minus"
+                            data-field=""
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.3332 8H2.6665"
+                                stroke="black"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </button>
+                        </span>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number border text-center"
+                          value="1"
+                        />
+                        <span class="input-group-prepend"
+                          ><button
+                            type="button"
+                            class="btn quantity-right-plus border"
+                            data-type="plus"
+                            data-field=""
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.99984 13.3337V8.00033M7.99984 8.00033V2.66699M7.99984 8.00033H13.3332M7.99984 8.00033H2.6665"
+                                stroke="black"
+                                stroke-linecap="round"
+                              />
+                            </svg></button
+                        ></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center align-middle">
+                    <strong>$9.99</strong>
+                  </td>
+                  <td class="text-center align-middle">
+                    <strong>$99.99</strong>
+                  </td>
+                  <td class="align-middle text-end">
+                    <button type="button" class="btn btn-danger remove-btn">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle" width="30%">
+                    <div class="media d-flex flex-nowrap">
+                      <a class="thumbnail pull-left" href="#">
+                        <img
+                          class="media-object"
+                          src="https://www.shore.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/C/T/CTESC4RUa.jpg"
+                          width="84"
+                          height="84"
+                        />
+                      </a>
+                      <div class="media-body px-4">
+                        <h4 class="media-heading font-medium mb-0">
+                          <a href="#" class="text-black text-decoration-none"
+                            >T-shirt</a
+                          >
+                        </h4>
+                        <h5 class="media-heading font-smaller">
+                          by <a href="#">Brand name</a>
+                        </h5>
+                        <span class="font-smaller">Red / M </span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="align-middle">
+                    <div class="qty-box">
+                      <div class="input-group">
+                        <span class="input-group-prepend"
+                          ><button
+                            type="button"
+                            class="btn quantity-left-minus border"
+                            data-type="minus"
+                            data-field=""
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.3332 8H2.6665"
+                                stroke="black"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </button>
+                        </span>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number border text-center"
+                          value="1"
+                        />
+                        <span class="input-group-prepend"
+                          ><button
+                            type="button"
+                            class="btn quantity-right-plus border"
+                            data-type="plus"
+                            data-field=""
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.99984 13.3337V8.00033M7.99984 8.00033V2.66699M7.99984 8.00033H13.3332M7.99984 8.00033H2.6665"
+                                stroke="black"
+                                stroke-linecap="round"
+                              />
+                            </svg></button
+                        ></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center align-middle">
+                    <strong>$9.99</strong>
+                  </td>
+                  <td class="text-center align-middle">
+                    <strong>$99.99</strong>
+                  </td>
+                  <td class="align-middle text-end">
+                    <button type="button" class="btn btn-danger remove-btn">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="align-middle" width="30%">
+                    <div class="media d-flex flex-nowrap">
+                      <a class="thumbnail pull-left" href="#">
+                        <img
+                          class="media-object"
+                          src="https://www.shore.co.uk/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/C/T/CTESC4RUa.jpg"
+                          width="84"
+                          height="84"
+                        />
+                      </a>
+                      <div class="media-body px-4">
+                        <h4 class="media-heading font-medium mb-0">
+                          <a href="#" class="text-black text-decoration-none"
+                            >T-shirt</a
+                          >
+                        </h4>
+                        <h5 class="media-heading font-smaller">
+                          by <a href="#">Brand name</a>
+                        </h5>
+                        <span class="font-smaller">Black / S</span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="align-middle">
+                    <div class="qty-box">
+                      <div class="input-group">
+                        <span class="input-group-prepend"
+                          ><button
+                            type="button"
+                            class="btn quantity-left-minus border"
+                            data-type="minus"
+                            data-field=""
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.3332 8H2.6665"
+                                stroke="black"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </button>
+                        </span>
+                        <input
+                          type="text"
+                          name="quantity"
+                          class="form-control input-number border text-center"
+                          value="1"
+                        />
+                        <span class="input-group-prepend"
+                          ><button
+                            type="button"
+                            class="btn quantity-right-plus border"
+                            data-type="plus"
+                            data-field=""
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.99984 13.3337V8.00033M7.99984 8.00033V2.66699M7.99984 8.00033H13.3332M7.99984 8.00033H2.6665"
+                                stroke="black"
+                                stroke-linecap="round"
+                              />
+                            </svg></button
+                        ></span>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="text-center align-middle">
+                    <strong>$9.99</strong>
+                  </td>
+                  <td class="text-center align-middle">
+                    <strong>$99.99</strong>
+                  </td>
+                  <td class="align-middle text-end">
+                    <button type="button" class="btn btn-danger remove-btn">
+                      Remove
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="row">
+              <div class="col-md-6 offset-6">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="border-bottom-0">
+                        <h5 class="font-small mb-0">Subtotal</h5>
+                      </td>
+                      <td class="text-end border-bottom-0">
+                        <h5 class="font-small mb-0">
+                          <strong>$999.99</strong>
+                        </h5>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border-bottom-0">
+                        <h5 class="font-small mb-0">Estimated shipping</h5>
+                      </td>
+                      <td class="text-end border-bottom-0">
+                        <h5 class="font-small mb-0">
+                          <strong>$9.999.99</strong>
+                        </h5>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="border-bottom-0">
+                        <h3 class="font-large">Total</h3>
+                      </td>
+                      <td class="text-end border-bottom-0">
+                        <h3 class="font-large mb-4">
+                          <strong>$9.999.99</strong>
+                        </h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-end border-bottom-0" colspan="2">
+                        <button type="button" class="btn btn-success px-5">
+                          Checkout
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main layout-->
+  </body>
+</html>
+
+<!-- Section ends -->

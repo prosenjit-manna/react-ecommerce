@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./stylesheet.css" />
+
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <!--Main Navigation-->
+
+    <header>
+      <!-- Navbar -->
+      <div class="container">
+        <nav id="main-navbar" class="navbar navbar-expand-lg">
+          <!-- Container wrapper -->
+          <div class="container">
+            <h2>Admin</h2>
+
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-product-list.html"
+                  >Product</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-product-details.html"
+                  >Product Details</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="user-signup.html"
+                  >SignUp</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-black" href="user-account-order.html"
+                  >Order</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-black"
+                  href="user-account-order-details.html"
+                  >Order Details</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+      </div>
+    </header>
+    <!--Main Navigation-->
+
+    <!--Main layout-->
+    <div class="wrapper pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="text-center">
+            <h2 class="mb-4">Sign Up</h2>
+          </div>
+          <div class="col-md-4 offset-md-4">
+            <div class="form-data">
+              <form>
+                <div class="mb-3">
+                  <label for="userFirstName" class="form-label"
+                    >First Name</label
+                  >
+                  <input type="text" class="form-control" id="userFirstName" />
+                </div>
+                <div class="mb-3">
+                  <label for="userlastName" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="userlastName" />
+                </div>
+                <div class="mb-3">
+                  <label for="userEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="userEmail" />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" />
+                </div>
+
+                <div class="text-center pt-4 mb-3">
+                  <button type="submit" class="btn btn-primary px-5">
+                    Create An Account
+                  </button>
+                </div>
+
+                <p class="text-center">
+                  Already have an account? <a href="user-login.html">Sign In</a>
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Main layout-->
+  </body>
+</html>
+
+<!-- Section ends -->
