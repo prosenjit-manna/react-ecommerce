@@ -14,10 +14,9 @@ export default function Sidebar() {
               </a>
             </li>
             <li className=''>
-              <a href='product.html' className='nav-link text-dark'>
-                {' '}
-                Products{' '}
-              </a>
+              <Link to={routes.admin.product.list.path} className='nav-link text-dark'>
+                Products
+              </Link>
             </li>
             <li>
               <a href='customer.html' className='nav-link text-dark'>

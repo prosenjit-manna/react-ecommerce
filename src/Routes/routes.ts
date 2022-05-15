@@ -18,6 +18,21 @@ export const routes = {
       list: {
         path: 'category/list',
       }
+    },
+    product: {
+      list: {
+        path: 'product/list',
+      },
+      create: {
+        path: 'product/create',
+        fullPath: '/admin/product/create',
+      },
+      edit: {
+        path: 'product/edit/:id',
+        build: (id: string) => {
+          return `/admin/product/edit/${id}`;
+        }
+      },
     }
   }
 };
