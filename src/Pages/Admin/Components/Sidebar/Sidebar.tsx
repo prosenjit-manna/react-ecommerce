@@ -21,10 +21,10 @@ export default function Sidebar() {
               </Link>
             </li>
             <li>
-              <a href='customer.html' className='nav-link text-dark'>
-                {' '}
-                User{' '}
-              </a>
+              <Link
+                to={routes.admin.customer.list.path}  className='nav-link text-dark'>
+                  Customer
+              </Link>
             </li>
             <li className='nav-item'>
               <Link className='nav-link text-dark' to={routes.admin.category.list.path}>

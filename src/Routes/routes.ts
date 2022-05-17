@@ -2,6 +2,39 @@ export const routes = {
   home: '/',
   login: '/login',
   logOut: '/logout',
+  signUp: '/signup',
+  product: {
+    list: {
+      path: '/products',
+    },
+    details: {
+      path: '/product/:name',
+      build: (name: string) => {
+        return `/product/${name}`;
+      }
+    },
+  },
+  orderList: {
+    list: {
+      path: '/orders',
+    },
+    details: {
+      path: '/orders/:id',
+      build: (id: string) => {
+        return `/orders/${id}`;
+      }
+    },
+  },
+  addressDetails: {
+    path: '/address',
+    add: {
+      path: '/address/add-address',
+    },
+    edit: {
+      path: '/address/edit-address',
+    },
+  },
+  accountDetails: '/account-details',
   admin: {
     path: '/admin',
     category: {
@@ -42,6 +75,21 @@ export const routes = {
         path: 'order/:id',
         build: (id: string) => {
           return `/admin/order/${id}`;
+        }
+      },
+    },
+    customer: {
+      list: {
+        path: 'customer/list'
+      },
+      create: {
+        path: 'customer/create',
+        fullPath: '/admin/customer/create',
+      },
+      edit: {
+        path: 'customer/edit/:id',
+        build: (id: string) => {
+          return `/admin/customer/edit/${id}`;
         }
       },
     }
