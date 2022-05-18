@@ -101,9 +101,7 @@ export default function ProductList() {
                       className="product-price d-flex flex-nowrap align-items-center"
                     >
                       <h6 className="mb-0 flex-grow-1">$61.99</h6>
-                      <button type="button" className="btn btn-primary">
-                        Add to cart
-                      </button>
+                      <Link to={routes.cart} className="btn btn-primary">Add to cart</Link>
                     </div>
                   </div>
                 </div>
@@ -129,9 +127,7 @@ export default function ProductList() {
                       className="product-price d-flex flex-nowrap align-items-center"
                     >
                       <h6 className="mb-0 flex-grow-1">$61.99</h6>
-                      <button type="button" className="btn btn-primary">
-                        Add to cart
-                      </button>
+                      <Link to={routes.cart} className="btn btn-primary">Add to cart</Link>
                     </div>
                   </div>
                 </div>
@@ -157,9 +153,7 @@ export default function ProductList() {
                       className="product-price d-flex flex-nowrap align-items-center"
                     >
                       <h6 className="mb-0 flex-grow-1">$61.99</h6>
-                      <button type="button" className="btn btn-primary">
-                        Add to cart
-                      </button>
+                      <Link to={routes.cart} className="btn btn-primary">Add to cart</Link>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { routes } from '../../../Routes/routes';
 
 export default function Nav() {
   return (
@@ -20,9 +22,9 @@ export default function Nav() {
             <div className='card position-absolute end-0'>
               <ul className='nav flex-column mb-3'>
                 <li className='nav-item'>
-                  <a className='nav-link text-secondary' href='#'>
+                  <Link to={routes.admin.profile.path} className='nav-link text-secondary'>
                     Profile
-                  </a>
+                  </Link>
                 </li>
                 <li className='nav-item'>
                   <a className='nav-link text-secondary' href='#'>

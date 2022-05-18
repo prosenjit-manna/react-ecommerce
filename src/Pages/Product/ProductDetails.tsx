@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { routes } from '../../Routes/routes';
 
 export default function ProductDetails() {
   return (
@@ -16,7 +18,7 @@ export default function ProductDetails() {
                 White Sneaker
                 <button className='wishlist-btn position-absolute top-0 end-0 bg-transparent border-0'>
                   <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                    <g clip-path='url(#clip0_1073_615)'>
+                    <g clipPath='url(#clip0_1073_615)'>
                       <path
                         d='M7.9999 2.74805L7.2829 2.01105C5.5999 0.281049 2.51389 0.878049 1.39989 
                         3.05305C0.876895 4.07605 0.758895 5.55305 1.71389 7.43805C2.63389 9.25305 
@@ -82,7 +84,7 @@ export default function ProductDetails() {
                     <span className='input-group-prepend'>
                       <button type='button' className='btn quantity-left-minus border' data-type='minus' data-field=''>
                         <svg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                          <path d='M13.3332 8H2.6665' stroke='black' stroke-linecap='round' />
+                          <path d='M13.3332 8H2.6665' stroke='black' strokeLinecap='round' />
                         </svg>
                       </button>
                     </span>
@@ -90,7 +92,7 @@ export default function ProductDetails() {
                       type='text'
                       name='quantity'
                       className='form-control input-number text-center border'
-                      value='1'
+                      defaultValue='1'
                     />
                     <span className='input-group-prepend'>
                       <button type='button' className='btn quantity-right-plus border' data-type='plus' data-field=''>
@@ -99,7 +101,7 @@ export default function ProductDetails() {
                             d='M7.99984 13.3337V8.00033M7.99984 8.00033V2.66699M7.99984 
                             8.00033H13.3332M7.99984 8.00033H2.6665'
                             stroke='black'
-                            stroke-linecap='round'
+                            strokeLinecap='round'
                           />
                         </svg>
                       </button>
@@ -108,9 +110,7 @@ export default function ProductDetails() {
                 </div>
               </div>
               <div className='product-buttons d-flex flex-nowrap gap-3 mb-4'>
-                <a href='user-cart.html' className='btn btn-primary'>
-                  Add to cart
-                </a>
+                <Link to={routes.cart} className="btn btn-primary">Add to cart</Link>
                 <a href='#' className='btn btn-secondary'>
                   Buy now
                 </a>

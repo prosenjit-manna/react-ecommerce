@@ -12,18 +12,22 @@ const AdminOrderList = React.lazy(() => import('../Pages/Admin/Order/List/OrderL
 const AdminOrderDetails = React.lazy(() => import('../Pages/Admin/Order/Details/OrderDetails'));
 const CustomerList = React.lazy(() => import('../Pages/Admin/Customer/List/CustomerList'));
 const CustomerAction = React.lazy(() => import('../Pages/Admin/Customer/Create/Action'));
+const AdminProfile = React.lazy(() => import('../Pages/Admin/Profile/CreateProfile'));
 
 const UserBase = React.lazy(() => import('../Pages/index'));
 const UserLogin = React.lazy(() => import('../Pages/LogIn/Login'));
 const UserSignUp = React.lazy(() => import('../Pages/SignUp/SignUp'));
 const ProductLists = React.lazy(() => import('../Pages/Product/ProductList'));
 const ProductDetails = React.lazy(() => import('../Pages/Product/ProductDetails'));
+const ViewCart = React.lazy(() => import('../Pages/Cart/Cart'));
+const ViewCheckout = React.lazy(() => import('../Pages/Checkout/Checkout'));
 
 const OrderList = React.lazy(() => import('../Pages/Account/MyOrder'));
 const OrderDetails = React.lazy(() => import('../Pages/Account/OrderDetails'));
 const AddressDetails = React.lazy(() => import('../Pages/Account/Address'));
 const AddressAction = React.lazy(() => import('../Pages/Account/AddressAction'));
 const AccountDetails = React.lazy(() => import('../Pages/Account/AccountDetails'));
+const PasswordReset = React.lazy(() => import('../Pages/ForgotPassword/ForgotPassword'));
 
 
 const NotFound = React.lazy(() => import('../Pages/404/404'));
@@ -45,6 +49,7 @@ export default function AppRoutes() {
             <Route path={routes.admin.customer.list.path} element={<CustomerList />} />
             <Route path={routes.admin.customer.edit.path} element={<CustomerAction />} />
             <Route path={routes.admin.customer.create.path} element={<CustomerAction />} />
+            <Route path={routes.admin.profile.path} element={<AdminProfile />} />
 
             <Route path="*" element={<NotFound />} />
           </Route>
@@ -60,6 +65,9 @@ export default function AppRoutes() {
             <Route path={routes.addressDetails.add.path} element={<AddressAction />} />
             <Route path={routes.addressDetails.edit.path} element={<AddressAction />} />
             <Route path={routes.accountDetails} element={<AccountDetails />} />
+            <Route path={routes.cart} element={<ViewCart />} />
+            <Route path={routes.forgotPassword} element={<PasswordReset />} />
+            <Route path={routes.checkout} element={<ViewCheckout />} />
           </Route>
           
           <Route path="*" element={<NotFound />} />

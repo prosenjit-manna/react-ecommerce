@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { routes } from '../../../../Routes/routes';
+import { useForm } from 'react-hook-form';
 
 export default function CustomerList() {
+
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (data:any) => console.log(data);
+
   return (
     <div className="container pt-4">
         <div className="mb-5">
@@ -11,13 +16,14 @@ export default function CustomerList() {
         <div className="mb-4">
           <div className="row">
             <div className="col-md-5">
-              <form className="d-none d-md-flex input-group w-auto my-auto">
+              <form className='d-none d-md-flex input-group w-auto my-auto' onSubmit={handleSubmit(onSubmit)}>
                 <input
-                  type="search"
-                  className="form-control rounded"
-                  placeholder="Search"
+                  type='search'
+                  className='form-control rounded'
+                  placeholder='Search'
+                  {...register('customerSearch')} 
                 />
-                <span className="input-group-text border-0">Search</span>
+                <input type="submit" value="Search" className="input-group-text border-0"/>
               </form>
             </div>
             <div className="col-md-7">

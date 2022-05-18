@@ -3,6 +3,9 @@ export const routes = {
   login: '/login',
   logOut: '/logout',
   signUp: '/signup',
+  cart: '/cart',
+  checkout: '/checkout',
+  forgotPassword: '/password-reset',
   product: {
     list: {
       path: '/products',
@@ -37,6 +40,9 @@ export const routes = {
   accountDetails: '/account-details',
   admin: {
     path: '/admin',
+    profile: {
+      path: '/admin/profile',
+    },
     category: {
       create: {
         path: 'category/create',
